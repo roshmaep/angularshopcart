@@ -8,6 +8,7 @@ import { ViewproductComponent } from './viewproduct/viewproduct.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { RouterModule, Routes } from '@angular/router';
 import { FormsModule } from '@angular/forms';
+import { ViewnwesComponent } from './viewnwes/viewnwes.component';
 
 const myRoute:Routes=[
   {
@@ -17,6 +18,10 @@ const myRoute:Routes=[
   {
     path:"view",
     component:ViewproductComponent
+  },
+  {
+    path:"news",
+    component:ViewnwesComponent
   }
 ]
 
@@ -25,7 +30,8 @@ const myRoute:Routes=[
     AppComponent,
     AddproductComponent,
     ViewproductComponent,
-    NavbarComponent
+    NavbarComponent,
+    ViewnwesComponent
   ],
   imports: [
     BrowserModule,
